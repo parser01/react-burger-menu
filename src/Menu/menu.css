@@ -1,0 +1,37 @@
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #000;
+	color: #fff;
+	transform: translate3d(100%, 0, 0);
+	transition: transform 0.3s;
+}
+
+.menu.menu_open {
+	transform: translate3d(0, 0, 0);
+}
+
+.material-icons.menu__close {
+	position: absolute;
+	top: 12px;
+	right: 16px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 36px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.menu__content li {
+	margin-bottom: 20px;
+	text-align: center;
+}
